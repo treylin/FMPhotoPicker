@@ -109,25 +109,6 @@ public class FMPhotoPickerViewController: UIViewController {
             self.fetchPhotos()
         } else {
             Helper.requestAuthorizationForPhotoAccess(authorized: self.fetchPhotos, rejected: Helper.openIphoneSetting)
-            
-//            let okAction = UIAlertAction(
-//                title: config.strings["permission_button_ok"],
-//                style: .default) { (_) in
-//                    Helper.requestAuthorizationForPhotoAccess(authorized: self.fetchPhotos, rejected: Helper.openIphoneSetting)
-//            }
-//
-//            let cancelAction = UIAlertAction(
-//                title: config.strings["permission_button_cancel"],
-//                style: .cancel,
-//                handler: nil)
-
-//            Helper.showDialog(
-//                in: self,
-//                okAction: okAction,
-//                cancelAction: cancelAction,
-//                title: config.strings["permission_dialog_title"],
-//                message: config.strings["permission_dialog_message"]
-//                )
         }
     }
     
